@@ -93,6 +93,7 @@ export default function ServicesExpendableDetail() {
                   opacity: activeIndex === index ? 1 : 0,
                 }}
                 transition={{ duration: 0.9, ease: "easeInOut" }}
+                end={{ maxHeight: 0, opacity: 0 }}
                 className="overflow-hidden"
               >
                 <div className="bg-black md:min-h-60 min-h-[100px] max-md:relative">
