@@ -73,7 +73,7 @@ export default function ServicesExpendableDetail() {
         >
           {activeIndex !== index && (
             <div
-              className="border-t border-solid border-black py-6 hover:cursor-pointer flex"
+              className="border-t border-solid border-black py-6 hover:cursor-pointer flex z-50"
               onClick={() => toggleActive(index)}
             >
               <div className="container">
