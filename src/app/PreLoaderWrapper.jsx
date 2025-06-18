@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import PreLoader from "@/components/Preloader";
+import PreLoader from "@/components/PreLoader";
 
 export default function PreLoaderWrapper({ children }) {
   const [showLoader, setShowLoader] = useState(true);
