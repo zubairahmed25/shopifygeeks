@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { CartBagIcon } from "@/icons";
 import { motion, AnimatePresence } from "framer-motion";
 import Spline from "@splinetool/react-spline";
@@ -7,6 +7,9 @@ import Spline from "@splinetool/react-spline";
 export default function ServicesExpendableDetail() {
   const [activeIndex, setActiveIndex] = useState(null);
   const sectionRefs = useRef([]);
+
+  //adding a delay to load spline
+  const [showSplineIndex, setShowSplineIndex] = useState(null);
 
   const servicesList = [
     {
@@ -46,9 +49,25 @@ export default function ServicesExpendableDetail() {
     },
   ];
 
+ // adding a timeout delay to render spline until the section expand animation if finish to smooth out animation
+  useEffect(() => {
+    if (activeIndex !== null) {
+      const timer = setTimeout(() => {
+        //TODO: test animation timings
+        setShowSplineIndex(activeIndex);
+      }, 800);
+      return () => clearTimeout(timer);
+    }
+  }, [activeIndex]);
+
   const toggleActive = (index) => {
     const newActiveIndex = activeIndex === index ? null : index;
     setActiveIndex(newActiveIndex);
+
+    //clearing previous spline to free up resource
+    if (newActiveIndex === null) {
+      setShowSplineIndex(null);
+    }
 
     // Scroll to the selected section when expanding
     if (newActiveIndex !== null && window.innerWidth >= 768) {
@@ -110,14 +129,18 @@ export default function ServicesExpendableDetail() {
                       </p>
                     </div>
                     <div className="flex flex-1 ">
-                      <Spline
-                        scene={item.iframeSrc}
-                        className="h-full w-full max-md:absolute max-md:inset-0 max-md:z-10 max-md:opacity-50"
-                        onLoad={() => console.log("Spline loaded")}
-                      />
-                      {activeIndex === index && (
+                        {/*here we delay spline rendering until the animation is complete*/}
+                      {showSplineIndex === index ? (
+                        <Spline
+                          scene={item.iframeSrc}
+                          className="h-full w-full max-md:absolute max-md:inset-0 max-md:z-10 max-md:opacity-50"
+                          onLoad={() =>
+                            console.log(`Spline loaded for ${item.title}`)
+                          }
+                        />
+                      ) : (
                         <div className="absolute inset-0 flex justify-center items-center ">
-                          <span className="text-white"></span>
+                         <span className="text-white"></span>
                         </div>
                       )}
                     </div>
