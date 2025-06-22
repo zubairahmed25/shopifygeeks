@@ -28,16 +28,18 @@ export default function Navigation() {
             <div className="header-bluer gap-3 p-3 border border-solid border-white/20 rounded-md">
               <NavLink
                 label="Home"
-                href="/"
+                href="#home"
                 className="bg-transparent border-none"
               />
-              <NavLink label="About Us" href="/" className="" />
-              <NavLink label="Services" href="/" className="" />
+              <NavLink label="About Us" href="#about-us" className="" />
+              <NavLink label="Services" href="#services" className="" />
             </div>
           </div>
-          <button className="bg-white text-black py-3 px-8 rounded-lg font-clashMedium text-base">
-            Contact Us
-          </button>
+          <a href="#contact-us">
+            <button className="bg-white text-black py-3 px-8 rounded-lg font-clashMedium text-base">
+              Contact Us
+            </button>
+          </a>
         </div>
       </nav>
 
@@ -53,9 +55,8 @@ export default function Navigation() {
         </div>
       </nav>
       <div
-        className={`fixed top-0 left-0 w-full h-screen bg-black transition-transform transform ${
-          isOpen ? "translate-x-0" : "translate-x-full"
-        } flex flex-col items-center justify-center text-white space-y-6`}
+        className={`fixed top-0 left-0 w-full h-screen bg-black transition-transform transform ${isOpen ? "translate-x-0" : "translate-x-full"
+          } flex flex-col items-center justify-center text-white space-y-6`}
       >
         <div className="flex items-center justify-between absolute top-0 right-0 left-0 px-3 py-6">
           <ImageBox src="/logo.svg" width={90} height={25} alt="Company Logo" />
@@ -67,14 +68,16 @@ export default function Navigation() {
         <ul className="flex flex-col space-y-6 text-center">
           <NavLink
             label="Home"
-            href="/"
+            href="#home"
             className="bg-transparent border-none"
           />
-          <NavLink label="About Us" href="/" className="" />
-          <NavLink label="Services" href="/" className="" />
-          <button className="bg-white text-black py-3 px-8 rounded-lg font-clashMedium text-base">
-            Contact Us
-          </button>
+          <NavLink label="About Us" href="#about-us" className="" />
+          <NavLink label="Services" href="#services" className="" />
+          <a href="#contact-us">
+            <button className="bg-white text-black py-3 px-8 rounded-lg font-clashMedium text-base">
+              Contact Us
+            </button>
+          </a>
         </ul>
 
         {/* Email */}

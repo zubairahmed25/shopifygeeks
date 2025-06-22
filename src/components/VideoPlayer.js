@@ -23,9 +23,11 @@ const VideoPlayer = () => {
               className="sm:min-w-96 min-w-full sm:min-h-96 min-h-full h-full w-full rounded-lg shadow-lg"
               src="https://www.dropbox.com/scl/fi/33rti7g98s7grmxldalet/Video-1-Horizontal.mp4?rlkey=vypjb58iv1j2fhc2q2emsvhsw&st=iacuhnpu&raw=1"
               loop
-              // muted
+              controls //adds control
               playsInline
+              poster="/video-thumbnail.png" //thumbnail for ios devices
             />
+
             {!isPlaying && (
               <div
                 className="absolute inset-0 flex items-center justify-center cursor-pointer"

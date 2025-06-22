@@ -3,7 +3,7 @@ import Spline from "@splinetool/react-spline";
 
 export default function ContactUs() {
   return (
-    <div className="flex min-h-[768px] bg-black md:flex-row flex-col relative">
+    <div className="flex min-h-[768px] bg-black md:flex-row flex-col relative" id="contact-us">
       <div className="md:flex hidden min-h-[768px] absolute inset-0">
         <div className="flex flex-1 bg-black"></div>
         <div className="flex flex-1"></div>

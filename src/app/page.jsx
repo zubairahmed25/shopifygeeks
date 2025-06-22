@@ -27,28 +27,28 @@ export const metadata = {
 export default async function Home() {
   return (
     <PreloaderWrapper>
-      <div className="flex flex-col">
+      <div className="flex flex-col" id="home">
         {/* Hero Section */}
-        <div className="flex items-end justify-center bg-black sm:min-h-[calc(100vh-2px)] min-h-[calc(100vh-60px)] relative">
-          <div className="container z-10 h-full">
-            <div className="flex flex-col sm:py-20 py-32 relative md:gap-0 gap-3">
-              <h1 className="md:text-9xl sm:text-8xl text-6xl font-bold text-white md:leading-[150px] sm:leading-[95px] leading-[75px]">
+        <div className="flex items-end justify-center bg-black min-h-[76vh] relative">
+          <div className="container z-10 h-full flex items-center">
+            <div className="flex flex-col gap-3 w-full transform -translate-y-16">
+              <h1 className="text-6xl sm:text-8xl md:text-9xl font-bold text-white leading-tight">
                 Code. Design. Impact.
               </h1>
-              <h4 className="text-white text-xl font-clashRegular md:text-center text-end z-10 md:absolute bottom-[110px] right-0">
+              <h4 className="text-white text-xl font-clashRegular text-end sm:text-center">
                 We create striking, high-performance
                 <br className="sm:block hidden" />
                 websites that turn ideas into reality.
               </h4>
             </div>
           </div>
-          {/* <HeroSection /> */}
 
           <HeroSection />
         </div>
 
         {/* Video Section */}
-        <VideoPlayer src="/video.ts" />
+        <div id="about-us"> <VideoPlayer src="/video.ts" /></div>
+
         <div className="flex items-center justify-center w-full border-t border-b border-solid border-white">
           <div className="container">
             <div className="flex items-center justify-center gap-2 py-3">

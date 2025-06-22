@@ -13,6 +13,7 @@ module.exports = {
         clashMedium: ["ClashDisplay-Medium", "sans-serif"],
         clashSemibold: ["ClashDisplay-Semibold", "sans-serif"],
         clashBold: ["ClashDisplay-Bold", "sans-serif"],
+        scrollBehavior: ['responsive'], 
       },
       container: {
         center: true,
