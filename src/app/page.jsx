@@ -1,5 +1,6 @@
 import VideoPlayer from "@/components/VideoPlayer";
 import ClientLogos from "@/components/ClientLogos";
+import Partners from "@/components/Partners";
 import ServicesExpendableDetail from "@/components/ServicesExpendableDetail";
 import ContactUs from "@/components/ContactUs";
 import HeroSection from "@/components/HeroSection";
@@ -47,32 +48,51 @@ export default async function Home() {
         </div>
 
         {/* Video Section */}
-        <div id="about-us"> <VideoPlayer src="/video.ts" /></div>
-
         <div className="flex items-center justify-center w-full border-t border-b border-solid border-white">
           <div className="container">
             <div className="flex items-center justify-center gap-2 py-3">
-              <h5 className="text-white text-lg font-clashLight">
-                Let’s Create
-              </h5>
+              <h6 className="text-white text-md font-clashLight">
+              Discover our process
+              </h6>
               <div className="flex items-center justify-center h-4 w-4">
                 <ArrowUpIcon />
               </div>
+        
+           
             </div>
           </div>
+      
         </div>
+   
+        <div id="about-us"> <VideoPlayer src="/video.ts" /></div>
 
-        {/* Clients Logos Section */}
-        <div className="flex w-full bg-black py-20">
+      {/* Clients Logos Section */}
+      <div className="flex w-full bg-white py-20">
           <div className="container">
             <div className="flex flex-col w-full">
-              <h3 className="text-white text-base font-clashLight mb-12 text-center">
-                {`CLIENT WE’VE WORKED WITH`}
+              <h3 className="text-[#07090B] text-base font-clashLight mb-12 text-center">
+                {`CLIENTS WE’VE WORKED WITH`}
               </h3>
               <ClientLogos />
             </div>
           </div>
         </div>
+
+
+        {/* Partners Logos Section */}
+        <div className="flex w-full bg-black py-20">
+          <div className="container">
+            <div className="flex flex-col w-full">
+              <h3 className="text-white text-base font-clashLight mb-12 text-center">
+                {`OUR PARTNERS`}
+              </h3>
+              <Partners />
+            </div>
+          </div>
+        </div>
+
+
+  
 
         {/* Our Services Section */}
         <div className="flex w-full flex-col bg-white ">
