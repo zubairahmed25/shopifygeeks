@@ -111,10 +111,10 @@ export default function ServicesExpendableDetail() {
                       <div className="bg-[#4462FF]/30 h-12 w-12 rounded-lg p-2">
                         <CartBagIcon />
                       </div>
-                      <h2 className="md:text-5xl text-xl text-white font-bold">
+                      <h2 className="md:text-3xl text-xl text-white font-bold">
                         {item.title}
                       </h2>
-                      <p className="text-white sm:text-lg text-base font-clashRegular">
+                      <p className="text-white sm:text-md text-base font-clashRegular">
                         {item.detail}
                       </p>
                     </div>
