@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="flex flex-col bg-black text-white">
       <div className="border-b border-solid border-[#5A5A5A]/40 w-full py-16">
         <p className="text-white lg:text-9xl md:text-7xl sm:text-5xl text-3xl font-semibold text-center">
-          info@example.com
+          hello@shopifygeeks.io
         </p>
       </div>
       <div className="container">

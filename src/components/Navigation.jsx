@@ -81,7 +81,7 @@ export default function Navigation() {
         </ul>
 
         {/* Email */}
-        <p className="text-3xl font-semibold mt-6">info@example.com</p>
+        <p className="text-2xl font-semibold mt-6">hello@shopifygeeks.io</p>
 
         {/* Social Media Icons */}
         <div className="flex items-center gap-4">
