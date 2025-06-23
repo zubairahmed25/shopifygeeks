@@ -3,15 +3,17 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const logos = [
-  "/logos/logo20.png",
-  "/logos/logo21.png",
-  "/logos/logo22.png",
-  "/logos/logo1.jpeg",
-  "/logos/logo2.jpeg",
-  "/logos/logo3.jpeg",
-  "/logos/logo4.jpeg",
-  "/logos/logo5.jpeg",
-  "/logos/logo6.jpeg",
+  "/logos/c1.png",
+  "/logos/c2.png",
+  "/logos/c3.png",
+  "/logos/c4.png",
+  "/logos/c5.png",
+  "/logos/c6.png",  
+  "/logos/c7.png",
+  "/logos/c8.png",
+  "/logos/c9.png",
+  "/logos/c10.png",
+  "/logos/c11.png",
 ];
 
 const ClientLogos = () => {
