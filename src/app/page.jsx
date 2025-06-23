@@ -70,7 +70,7 @@ export default async function Home() {
       <div className="flex w-full bg-white py-10">
           <div className="container">
             <div className="flex flex-col w-full">
-              <h3 className="text-[#07090B] text-base font-clashLight mb-12 text-center">
+              <h3 className="text-[#07090B] text-base font-clashLight font-bold mb-12 text-center">
                 {`POWERING BRANDS THAT MOVED THE MARKET`}
               </h3>
               <ClientLogos />
@@ -83,7 +83,7 @@ export default async function Home() {
         <div className="flex w-full bg-black py-10">
           <div className="container">
             <div className="flex flex-col w-full">
-              <h3 className="text-white text-base font-clashLight mb-12 text-center">
+              <h3 className="text-white text-base font-clashLight font-bold mb-12 text-center">
                 {`OUR SHOPIFY PARTNERS`}
               </h3>
               <Partners />
