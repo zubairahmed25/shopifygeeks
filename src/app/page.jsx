@@ -8,7 +8,7 @@ import { ArrowUpIcon } from "@/icons";
 import PreloaderWrapper from "./PreLoaderWrapper";
 
 export const metadata = {
-  title: `Shopify Greeks - Software Service provider`,
+  title: `Shopify Geeks - Shopify Development Agency`,
   description:
     "At Shopify Geeks, our team specializes in a wide range of services designed to elevate your online store. Whether you need a stunning new theme, custom functionality, or a seamless migration to Shopify, we’ve got you covered. Explore our core services below and discover how we can help your business grow.",
 
@@ -17,7 +17,7 @@ export const metadata = {
     follow: true,
   },
   openGraph: {
-    title: `Shopify Greeks - Software Service provider`,
+    title: `Shopify Geeks - Shopify Development Agency`,
     url: "",
   },
   alternates: {
