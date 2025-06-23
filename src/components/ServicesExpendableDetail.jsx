@@ -122,7 +122,7 @@ export default function ServicesExpendableDetail() {
                         src={item.thumbnail}
                         alt="Preview"
                         className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-500 
-      scale-[1.3] max-md:scale-[2.45] translate-y-1 max-md:opacity-50
+                        max-md:scale-[3] translate-y-1 max-md:opacity-50
       ${splineLoadedIndex === index ? "!opacity-0" : "opacity-100"}`}
                       />
                       {/* spline */}
@@ -131,7 +131,7 @@ export default function ServicesExpendableDetail() {
                           className="absolute w-full h-full"
                           initial={{ opacity: 0 }}
                           animate={{ opacity: 1 }}
-                          transition={{ duration: 1 }}
+                          transition={{ duration: 0.6 }}
                         >
                           <Spline
                             scene={item.iframeSrc}

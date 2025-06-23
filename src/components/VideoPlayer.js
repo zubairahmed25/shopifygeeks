@@ -3,13 +3,13 @@
 import React, { useState, useRef } from "react";
 
 const VideoPlayer = () => {
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [hasStarted, setHasStarted] = useState(false);
   const videoRef = useRef(null);
 
   const handleInitialPlay = () => {
     if (videoRef.current) {
       videoRef.current.play();
-      setIsPlaying(true);
+      setHasStarted(true);
     }
   };
 
@@ -24,19 +24,16 @@ const VideoPlayer = () => {
               src="https://www.dropbox.com/scl/fi/33rti7g98s7grmxldalet/Video-1-Horizontal.mp4?rlkey=vypjb58iv1j2fhc2q2emsvhsw&st=iacuhnpu&raw=1"
               loop
               playsInline
-              controls={!isPlaying} // controls shown only before play
+              controls
               poster="/video-thumbnail.png"
-              onClick={() => {
-                if (!isPlaying) handleInitialPlay();
-              }}
             />
 
-            {!isPlaying && (
+            {!hasStarted && (
               <div
                 className="absolute inset-0 flex items-center justify-center cursor-pointer"
                 onClick={handleInitialPlay}
               >
-                <div className="w-20 h-20 bg-white bg-opacity-80 rounded-full flex items-center justify-center">
+                <div className="w-20 h-20 bg-white bg-opacity-90 rounded-full flex items-center justify-center">
                   <svg
                     className="w-12 h-12 text-black"
                     fill="currentColor"
