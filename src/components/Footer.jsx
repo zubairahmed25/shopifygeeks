@@ -29,25 +29,25 @@ export default function Footer() {
                 NAVIGATION
               </h3>
               <Link
-                href="/"
+                href="#home"
                 className="text-white text-base font-clashLight hover:underline anim"
               >
                 Home
               </Link>
               <Link
-                href="/"
+                href="#about-us"
                 className="text-white text-base font-clashLight hover:underline anim"
               >
                 About Us
               </Link>
               <Link
-                href="/"
+                href="#services"
                 className="text-white text-base font-clashLight hover:underline anim"
               >
                 Services
               </Link>
               <Link
-                href="/"
+                href="#contact-us"
                 className="text-white text-base font-clashLight hover:underline anim"
               >
                 Contact
@@ -58,7 +58,7 @@ export default function Footer() {
                 SERVICES
               </h3>
               <Link
-                href="/"
+                href="#services"
                 className="text-white text-base font-clashLight hover:underline anim"
               >
                 Shopify Theme Development

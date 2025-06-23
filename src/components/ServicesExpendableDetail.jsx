@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import { CartBagIcon } from "@/icons";
 import { motion, AnimatePresence } from "framer-motion";
 import Spline from "@splinetool/react-spline";
@@ -7,6 +7,7 @@ import Spline from "@splinetool/react-spline";
 export default function ServicesExpendableDetail() {
   const [activeIndex, setActiveIndex] = useState(null);
   const [mountedSplineIndex, setMountedSplineIndex] = useState(null);
+  const [splineLoadedIndex, setSplineLoadedIndex] = useState(null);
 
   const sectionRefs = useRef([]);
 
@@ -54,11 +55,13 @@ export default function ServicesExpendableDetail() {
 
     if (newActive !== null) {
       setMountedSplineIndex(null);
+      setSplineLoadedIndex(null);
       setTimeout(() => {
         setMountedSplineIndex(newActive);
-      }, 500); // Spline fade-in delay
+      }, 500);
     } else {
       setMountedSplineIndex(null);
+      setSplineLoadedIndex(null);
     }
 
     if (newActive !== null && window.innerWidth >= 768 && newActive === 4) {
@@ -118,29 +121,27 @@ export default function ServicesExpendableDetail() {
 
                     {/* spline with thumbnail transition */}
                     <div className="flex flex-1 relative min-h-[300px] rounded-lg overflow-hidden">
-                      {/* thumbnail image */}
+                      {/* thumbnail image until spline is fully loaded */}
                       <img
                         src={item.thumbnail}
                         alt="Preview"
                         className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-500 
-    scale-[0.85] max-md:scale-[1.10] translate-y-1 max-md:opacity-50
-    ${mountedSplineIndex === index
-                            ? "!opacity-0"
-                            : "opacity-100"
-                          }`}
+                          scale-[1.3] max-md:scale-[2.45] translate-y-1 max-md:opacity-50
+                          ${splineLoadedIndex === index ? "!opacity-0" : "opacity-100"}`}
                       />
 
-                      {/* spline shown after delay */}
+                      {/* showing spline only when its fully loaded */}
                       {mountedSplineIndex === index && (
                         <motion.div
                           className="absolute w-full h-full"
                           initial={{ opacity: 0 }}
                           animate={{ opacity: 1 }}
-                          transition={{ duration: 0.6 }}
+                          transition={{ duration: 1 }}
                         >
                           <Spline
                             scene={item.iframeSrc}
                             className="w-full h-full max-md:absolute max-md:inset-0 max-md:z-10 max-md:opacity-50"
+                            onLoad={() => setSplineLoadedIndex(index)}
                           />
                         </motion.div>
                       )}
