@@ -106,31 +106,26 @@ export default function ServicesExpendableDetail() {
                 className="overflow-hidden"
               >
                 <div className="bg-black md:min-h-60 min-h-[100px] max-md:relative">
-                  <div className="container flex md:flex-row flex-col gap-8">
-                    <div className="flex flex-col flex-1 gap-4 py-10">
+                  <div className="container relative flex md:flex-row flex-col gap-8">
+                    <div className="flex flex-col flex-1 gap-4 py-10 relative z-10">
                       <div className="bg-[#4462FF]/30 h-12 w-12 rounded-lg p-2">
                         <CartBagIcon />
                       </div>
-                      <h2 className="md:text-3xl text-xl text-white font-bold">
-                        {item.title}
-                      </h2>
-                      <p className="text-white sm:text-md text-base font-clashRegular">
-                        {item.detail}
-                      </p>
+                      <h2 className="md:text-3xl text-xl text-white font-bold">{item.title}</h2>
+                      <p className="text-white sm:text-md text-base font-clashRegular">{item.detail}</p>
                     </div>
 
                     {/* spline with thumbnail transition */}
-                    <div className="flex flex-1 relative min-h-[300px] rounded-lg overflow-hidden">
-                      {/* thumbnail image until spline is fully loaded */}
+                    <div className="absolute inset-0 z-0 flex-1 min-h-[300px] rounded-lg overflow-hidden">
+                      {/* thumbnail image */}
                       <img
                         src={item.thumbnail}
                         alt="Preview"
                         className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-500 
-                          scale-[1.3] max-md:scale-[2.45] translate-y-1 max-md:opacity-50
-                          ${splineLoadedIndex === index ? "!opacity-0" : "opacity-100"}`}
+      scale-[1.3] max-md:scale-[2.45] translate-y-1 max-md:opacity-50
+      ${splineLoadedIndex === index ? "!opacity-0" : "opacity-100"}`}
                       />
-
-                      {/* showing spline only when its fully loaded */}
+                      {/* spline */}
                       {mountedSplineIndex === index && (
                         <motion.div
                           className="absolute w-full h-full"

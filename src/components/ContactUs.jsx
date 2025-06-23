@@ -10,19 +10,17 @@ export default function ContactUs() {
       </div>
       <div className="md:container p-0 max-w-full ">
         <div className="flex md:absolute static md:flex-row flex-col">
-          <div className="flex flex-1 flex-col py-20 px-12 sm:px-0  gap-10 min-h-[600px] sm:h-auto">
-            <div className="flex flex-col items-start gap-10 text-start">
+          <div className="flex flex-1 flex-col py-20 px-12 sm:px-0 gap-10 min-h-[600px] sm:h-auto relative overflow-hidden">
+            <div className="flex flex-col items-start gap-10 text-start relative z-10">
               <h1 className="md:text-4xl sm:text-2xl text-2xl text-white font-semibold">
-              Let’s Build 
+                Let’s Build
                 <br /> Something Better — Together.
               </h1>
-              <p className="text-white w-full bg-transparent border-b border-solid text-md font-clashRegular">Book your free consultation. No pressure. No commitments. Just clarity.</p>
-
-              <button className="text-[#4462FF] text-base font-clashRegular py-3 px-8 bg-white w-max border border-solid border-transparent hover:border-[#4462FF] anim">
-                Book Free Consultation
-              </button>
+              <p className="text-white w-full bg-transparent border-b border-solid text-md font-clashRegular">
+                Book your free consultation. No pressure. No commitments. Just clarity.
+              </p>
             </div>
-            <div className="flex flex-1 items-center justify-end relative">
+            <div className="absolute inset-0 z-0 pointer-events-none w-[400px] h-[300px]">
               <Spline scene="/contact.splinecode" />
             </div>
           </div>

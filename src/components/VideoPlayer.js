@@ -4,22 +4,12 @@ import React, { useState, useRef } from "react";
 
 const VideoPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const [showControls, setShowControls] = useState(false);
   const videoRef = useRef(null);
 
   const handleInitialPlay = () => {
     if (videoRef.current) {
       videoRef.current.play();
-      videoRef.current.controls = false; // ensure controls are hidden
       setIsPlaying(true);
-    }
-  };
-
-  const toggleControls = () => {
-    if (videoRef.current && isPlaying) {
-      const newState = !showControls;
-      videoRef.current.controls = newState;
-      setShowControls(newState);
     }
   };
 
@@ -34,8 +24,11 @@ const VideoPlayer = () => {
               src="https://www.dropbox.com/scl/fi/33rti7g98s7grmxldalet/Video-1-Horizontal.mp4?rlkey=vypjb58iv1j2fhc2q2emsvhsw&st=iacuhnpu&raw=1"
               loop
               playsInline
+              controls={!isPlaying} // controls shown only before play
               poster="/video-thumbnail.png"
-              onClick={toggleControls} // toggle controls on click
+              onClick={() => {
+                if (!isPlaying) handleInitialPlay();
+              }}
             />
 
             {!isPlaying && (

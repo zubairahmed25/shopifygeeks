@@ -70,10 +70,11 @@ export default function Navigation() {
             label="Home"
             href="#home"
             className="bg-transparent border-none"
+            onClick={() => setIsOpen(false)}
           />
-          <NavLink label="About Us" href="#about-us" className="" />
-          <NavLink label="Services" href="#services" className="" />
-          <a href="#contact-us">
+          <NavLink label="About Us" href="#about-us" className=""  onClick={() => setIsOpen(false)}/>
+          <NavLink label="Services" href="#services" className="" onClick={() => setIsOpen(false)}/>
+          <a href="#contact-us"  onClick={() => setIsOpen(false)}>
             <button className="bg-white text-black py-3 px-8 rounded-lg font-clashMedium text-base">
               Contact Us
             </button>

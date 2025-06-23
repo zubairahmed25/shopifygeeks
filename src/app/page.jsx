@@ -52,22 +52,22 @@ export default async function Home() {
           <div className="container">
             <div className="flex items-center justify-center gap-2 py-3">
               <h6 className="text-white text-md font-clashLight">
-              Discover our process
+                Discover our process
               </h6>
               <div className="flex items-center justify-center h-4 w-4">
                 <ArrowUpIcon />
               </div>
-        
-           
+
+
             </div>
           </div>
-      
+
         </div>
-   
+
         <div id="about-us"> <VideoPlayer src="/video.ts" /></div>
 
-      {/* Clients Logos Section */}
-      <div className="flex w-full bg-white py-10">
+        {/* Clients Logos Section */}
+        <div className="flex w-full bg-white py-10">
           <div className="container">
             <div className="flex flex-col w-full">
               <h3 className="text-[#07090B] text-base font-clashLight font-bold mb-12 text-center">
@@ -80,19 +80,16 @@ export default async function Home() {
 
 
         {/* Partners Logos Section */}
-        <div className="flex w-full bg-black py-10">
+        <div className="flex w-full bg-black">
           <div className="container">
-            <div className="flex flex-col w-full">
-              <h3 className="text-white text-base font-clashLight font-bold mb-12 text-center">
+            <div className="flex flex-row justify-center items-center w-full px-6 md:px-12 ">
+              <h3 className="text-white text-base font-clashLight font-bold text-center pr-[25px]">
                 {`OUR SHOPIFY PARTNERS`}
               </h3>
               <Partners />
             </div>
           </div>
         </div>
-
-
-  
 
         {/* Our Services Section */}
         <div className="flex w-full flex-col bg-white ">

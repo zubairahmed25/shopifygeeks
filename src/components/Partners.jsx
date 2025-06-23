@@ -18,48 +18,48 @@ const logos = [
 
 const Partners = () => {
   return (
-    <div>    
-     <div className="overflow-hidden h-[300px] flex justify-center  mt-12"> {/* fixing div height as more area will be better with vertical scrolling */}
-          <div className="flex flex-row gap-8">
+    <div>
+      <div className="overflow-hidden h-[300px] flex justify-center"> {/* fixing div height as more area will be better with vertical scrolling */}
+        <div className="flex flex-row gap-8">
 
-    <div className="relative w-28 flex justify-center">
-          <motion.div
-            className="flex flex-col space-y-12 absolute"
-            animate={{ y: ["0%", "-50%"] }} // changing animation to vertical
-            transition={{ repeat: Infinity, duration: 60, ease: "linear" }}
-          >
-            {[...logos, ...logos].map((logo, index) => (
-              <img
-                key={index}
-                src={logo}
-                alt="Client Logo"
-                className="w-28 h-auto object-contain"
-                style={{left: "-11px", top: "15px"}}
-              />   
-            ))}
-            
-          </motion.div>
-          
+          <div className="relative w-28 flex justify-center">
+            <motion.div
+              className="flex flex-col space-y-12 absolute"
+              animate={{ y: ["0%", "-50%"] }} // changing animation to vertical
+              transition={{ repeat: Infinity, duration: 60, ease: "linear" }}
+            >
+              {[...logos, ...logos].map((logo, index) => (
+                <img
+                  key={index}
+                  src={logo}
+                  alt="Client Logo"
+                  className="w-28 h-auto object-contain"
+                  style={{ left: "-11px", top: "15px" }}
+                />
+              ))}
+
+            </motion.div>
+
+          </div>
+          <div className="relative w-28 flex justify-center">
+            <motion.div
+              className="flex flex-col space-y-12 absolute"
+              animate={{ y: ["-50%", "0%"] }} // changing animation to vertical
+              transition={{ repeat: Infinity, duration: 60, ease: "linear" }}
+            >
+              {[...logos, ...logos].map((logo, index) => (
+                <img
+                  key={index}
+                  src={logo}
+                  alt="Client Logo"
+                  className="w-28 h-auto object-contain"
+                />
+              ))}
+            </motion.div>
+          </div>
         </div>
-    <div className="relative w-28 flex justify-center">
-          <motion.div
-            className="flex flex-col space-y-12 absolute"
-            animate={{ y: ["-50%", "0%"] }} // changing animation to vertical
-            transition={{ repeat: Infinity, duration: 60, ease: "linear" }}
-          >
-            {[...logos, ...logos].map((logo, index) => (
-              <img
-                key={index}
-                src={logo}
-                alt="Client Logo"
-                className="w-28 h-auto object-contain"
-              />
-            ))}
-          </motion.div>
-          </div>
-          </div>
       </div>
-      
+
     </div>
   );
 };
