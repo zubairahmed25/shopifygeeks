@@ -14,6 +14,17 @@ const logos = [
   "/logos/c9.png",
   "/logos/c10.png",
   "/logos/c11.png",
+  "/logos/c1.png",
+  "/logos/c2.png",
+  "/logos/c3.png",
+  "/logos/c4.png",
+  "/logos/c5.png",
+  "/logos/c6.png",  
+  "/logos/c7.png",
+  "/logos/c8.png",
+  "/logos/c9.png",
+  "/logos/c10.png",
+  "/logos/c11.png",
 ];
 
 const ClientLogos = () => {

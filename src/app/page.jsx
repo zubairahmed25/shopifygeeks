@@ -67,11 +67,11 @@ export default async function Home() {
         <div id="about-us"> <VideoPlayer src="/video.ts" /></div>
 
       {/* Clients Logos Section */}
-      <div className="flex w-full bg-white py-20">
+      <div className="flex w-full bg-white py-10">
           <div className="container">
             <div className="flex flex-col w-full">
               <h3 className="text-[#07090B] text-base font-clashLight mb-12 text-center">
-                {`CLIENTS WE’VE WORKED WITH`}
+                {`POWERING BRANDS THAT MOVED THE MARKET`}
               </h3>
               <ClientLogos />
             </div>
@@ -80,11 +80,11 @@ export default async function Home() {
 
 
         {/* Partners Logos Section */}
-        <div className="flex w-full bg-black py-20">
+        <div className="flex w-full bg-black py-10">
           <div className="container">
             <div className="flex flex-col w-full">
               <h3 className="text-white text-base font-clashLight mb-12 text-center">
-                {`OUR PARTNERS`}
+                {`OUR SHOPIFY PARTNERS`}
               </h3>
               <Partners />
             </div>
