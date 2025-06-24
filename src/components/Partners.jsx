@@ -18,7 +18,7 @@ const logos = [
 
 const Partners = () => {
   return (
-    <div>
+    <div className="p-12">
       <div className="overflow-hidden h-[300px] flex justify-center"> {/* fixing div height as more area will be better with vertical scrolling */}
         <div className="flex flex-row gap-8">
 
