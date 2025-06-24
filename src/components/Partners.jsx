@@ -4,16 +4,16 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const logos = [
-  "/logos/logo1.png",
-  "/logos/logo2.png",
-  "/logos/logo3.png",
-  "/logos/logo4.png",
-  "/logos/logo5.png",
-  "/logos/logo1.png",
-  "/logos/logo2.png",
-  "/logos/logo3.png",
-  "/logos/logo4.png",
-  "/logos/logo5.png",
+  "/logos/d1.svg",
+"/logos/d2.svg",
+"/logos/d3.svg",
+"/logos/d4.svg",
+"/logos/d5.svg",
+"/logos/d6.svg",
+"/logos/d7.svg",
+"/logos/d8.svg",
+"/logos/d9.svg",
+
 ];
 
 const Partners = () => {
