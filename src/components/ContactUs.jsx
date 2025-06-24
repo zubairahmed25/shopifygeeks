@@ -28,7 +28,7 @@ export default function ContactUs() {
         ${/* desktop: normal inline positioning */ ""}
         md:static md:flex-1 md:w-auto md:h-auto
         ${/* mobile: background effect */ ""}
-        max-md:absolute max-md:inset-0 max-md:z-0 max-md:pointer-events-none max-md:w-[400px] max-md:h-[300px]
+        max-md:absolute max-md:inset-0 max-md:z-0 max-md:pointer-events-none max-md:w-[400px] max-md:h-[300px] max-md:opacity-50
       `}
             >
               <Spline scene="/contact.splinecode" />

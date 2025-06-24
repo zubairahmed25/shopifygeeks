@@ -12,9 +12,9 @@ export default function RootLayout({ children }) {
           <Navigation />
         </header>
 
-        <main>{children}</main>
+          <main className="w-full max-w-[100vw] overflow-x-hidden">{children}</main>
+          <Footer />
 
-        <Footer />
       </body>
     </html>
   );

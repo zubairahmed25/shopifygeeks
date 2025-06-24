@@ -33,7 +33,7 @@ export default async function Home() {
         <div className="flex items-end justify-center bg-black min-h-[76vh] relative">
           <div className="container z-10 h-full flex items-center">
             <div className="flex flex-col gap-3 w-full transform -translate-y-16">
-              <h1 className="text-5xl sm:text-5xl md:text-7xl font-bold text-white leading-tight">
+              <h1 className="text-5xl sm:text-5xl md:text-7xl font-bold text-white leading-tight max-sm:text-[2.8rem]">
                 Shopify Development, Simplified.
               </h1>
               <h4 className="text-white text-xl font-clashRegular sm:text-center">
@@ -80,14 +80,15 @@ export default async function Home() {
         {/* Partners Logos Section */}
         <div className="flex w-full bg-black">
           <div className="container">
-            <div className="flex flex-row justify-center items-center w-full px-6 md:px-12 ">
-              <h3 className="text-white text-base font-clashLight font-bold text-center pr-[25px]">
+            <div className="flex flex-col md:flex-row justify-center items-center w-full px-6 md:px-12 gap-4 md:gap-0">
+              <h3 className="text-white text-base font-clashLight font-bold text-center md:pr-[25px] max-md:mt-[10px]">
                 {`OUR SHOPIFY PARTNERS`}
               </h3>
               <Partners />
             </div>
           </div>
         </div>
+
 
         {/* Our Services Section */}
         <div className="flex w-full flex-col bg-white ">
