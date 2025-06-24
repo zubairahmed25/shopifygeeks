@@ -33,13 +33,13 @@ export default async function Home() {
         <div className="flex items-end justify-center bg-black min-h-[76vh] relative">
           <div className="container z-10 h-full flex items-center">
             <div className="flex flex-col gap-3 w-full transform -translate-y-16">
-              <h1 className="text-6xl sm:text-8xl md:text-9xl font-bold text-white leading-tight">
-                Code. Design. Impact.
+              <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-white leading-tight">
+                Shopify Development, Simplified.
               </h1>
               <h4 className="text-white text-xl font-clashRegular text-end sm:text-center">
-                We create striking, high-performance
+                No retainers. No commitments
                 <br className="sm:block hidden" />
-                websites that turn ideas into reality.
+                Only the good stuff.
               </h4>
             </div>
           </div>
