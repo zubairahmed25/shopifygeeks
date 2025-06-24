@@ -36,7 +36,7 @@ export default async function Home() {
               <h1 className="text-5xl sm:text-5xl md:text-7xl font-bold text-white leading-tight">
                 Shopify Development, Simplified.
               </h1>
-              <h4 className="text-white text-xl font-clashRegular text-end sm:text-center">
+              <h4 className="text-white text-xl font-clashRegular sm:text-center">
                 No retainers. No commitments. Only the good stuff.
               </h4>
             </div>
