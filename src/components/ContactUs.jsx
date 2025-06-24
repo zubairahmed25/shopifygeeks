@@ -10,7 +10,8 @@ export default function ContactUs() {
       </div>
       <div className="md:container p-0 max-w-full ">
         <div className="flex md:absolute static md:flex-row flex-col">
-          <div className="flex flex-1 flex-col py-20 px-12 sm:px-0 gap-10 min-h-[600px] sm:h-auto relative overflow-hidden">
+          <div className="flex flex-1 flex-col py-20 px-12 sm:px-0 gap-10 md:min-h-[600px] sm:h-auto relative overflow-hidden">
+
             <div className="flex flex-col items-start gap-10 text-start relative z-10">
               <h1 className="md:text-4xl sm:text-2xl text-2xl text-white font-semibold">
                 Let’s Build
@@ -20,10 +21,20 @@ export default function ContactUs() {
                 Book your free consultation. No pressure. No commitments. Just clarity.
               </p>
             </div>
-            <div className="absolute inset-0 z-0 pointer-events-none w-[400px] h-[300px]">
+
+            <div
+              className={`
+        flex items-center justify-end relative
+        ${/* desktop: normal inline positioning */ ""}
+        md:static md:flex-1 md:w-auto md:h-auto
+        ${/* mobile: background effect */ ""}
+        max-md:absolute max-md:inset-0 max-md:z-0 max-md:pointer-events-none max-md:w-[400px] max-md:h-[300px]
+      `}
+            >
               <Spline scene="/contact.splinecode" />
             </div>
           </div>
+
           <div className="flex flex-[1.2] bg-[#2D4EFF] h-[768px] w-full">
             <form className="flex flex-col w-full md:py-20 sm:py-12 p-8 gap-6">
               <div className="flex w-full">
