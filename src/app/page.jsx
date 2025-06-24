@@ -33,13 +33,11 @@ export default async function Home() {
         <div className="flex items-end justify-center bg-black min-h-[76vh] relative">
           <div className="container z-10 h-full flex items-center">
             <div className="flex flex-col gap-3 w-full transform -translate-y-16">
-              <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-white leading-tight">
+              <h1 className="text-5xl sm:text-5xl md:text-7xl font-bold text-white leading-tight">
                 Shopify Development, Simplified.
               </h1>
               <h4 className="text-white text-xl font-clashRegular text-end sm:text-center">
-                No retainers. No commitments
-                <br className="sm:block hidden" />
-                Only the good stuff.
+                No retainers. No commitments. Only the good stuff.
               </h4>
             </div>
           </div>
