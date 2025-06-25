@@ -35,11 +35,11 @@ export default function Navigation() {
               <NavLink label="Services" href="#services" className="" />
             </div>
           </div>
-          <a href="#contact-us">
-            <button className="bg-white text-black py-3 px-8 rounded-lg font-clashMedium text-base">
-              Contact Us
+          {/* <a href="#contact-us"> */}
+            <button className="bg-white text-black py-3 px-8 rounded-lg font-clashMedium text-base"  onClick={() => window.location.href = 'https://calendly.com/shopifygeeks'}>
+              Free Consultation
             </button>
-          </a>
+          {/* </a> */}
         </div>
       </nav>
 
@@ -74,11 +74,11 @@ export default function Navigation() {
           />
           <NavLink label="About Us" href="#about-us" className=""  onClick={() => setIsOpen(false)}/>
           <NavLink label="Services" href="#services" className="" onClick={() => setIsOpen(false)}/>
-          <a href="#contact-us"  onClick={() => setIsOpen(false)}>
-            <button className="bg-white text-black py-3 px-8 rounded-lg font-clashMedium text-base">
-              Contact Us
+          {/* <a href="#contact-us"  onClick={() => setIsOpen(false)}> */}
+            <button className="bg-white text-black py-3 px-8 rounded-lg font-clashMedium text-base"  onClick={() => window.location.href = 'https://calendly.com/shopifygeeks'}>
+              Free Consultation
             </button>
-          </a>
+          {/* </a> */}
         </ul>
 
         {/* Email */}
