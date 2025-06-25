@@ -11,7 +11,7 @@ export default function Footer() {
         </p>
       </div>
       <div className="container">
-        <div className="flex md:gap-10 gap-16 py-16 md:flex-row flex-col">
+        <div className="flex md:gap-4 gap-8 py-16 md:flex-row flex-col">
           <div className="flex flex-1 flex-col gap-12 md:items-start items-center">
             <ImageBox
               src="/logo.svg"

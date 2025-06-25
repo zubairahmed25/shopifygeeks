@@ -206,3 +206,8 @@ body.preloader-active {
     -webkit-filter: blur(20px);
   }
 }
+
+
+.custom-gradient {
+  background: linear-gradient(90deg,rgba(2, 10, 242, 1) 0%, rgba(150, 13, 214, 1) 100%);
+}

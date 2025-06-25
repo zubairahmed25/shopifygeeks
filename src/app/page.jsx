@@ -9,6 +9,7 @@ import { ArrowUpIcon } from "@/icons";
 import PreloaderWrapper from "./PreLoaderWrapper";
 import BeforeAfterSlider from "@/components/BeforeAfterSlider";
 import Quote from "@/components/Quote";
+import FreeConsult from "@/components/FreeConsult";
 
 export const metadata = {
   title: `Shopify Geeks - Shopify Development Agency`,
@@ -53,6 +54,7 @@ export default async function Home() {
 
 
         <div id="about-us"> <VideoPlayer src="/video.ts" /></div>
+  <FreeConsult/>
 
  {/* Quote Section */}
  <Quote/>

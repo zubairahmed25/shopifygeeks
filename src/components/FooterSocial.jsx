@@ -5,7 +5,7 @@ import { InstagramIcon, LinkedInIcon, DiscordIcon } from "@/icons";
 
 export default function FooterSocial() {
   return (
-    <div className="flex flex-col gap-12 md:items-start items-center">
+    <div className="flex flex-col gap-4 md:items-start items-center">
       <div className="flex items-center gap-4">
         <Link
           href="/"
@@ -19,12 +19,7 @@ export default function FooterSocial() {
         >
           <InstagramIcon />
         </Link>
-        <Link
-          href="/"
-          className="flex items-center justify-center rounded-full border border-solid border-[#5A5A5A]  h-12 w-12 p-2"
-        >
-          <DiscordIcon />
-        </Link>
+
       </div>
       <p className="text-white font-clashExtralight">
         © {new Date().getFullYear()} ShopifyGeeks. All Rights Reserved.

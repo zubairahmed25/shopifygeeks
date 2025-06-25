@@ -14,7 +14,7 @@ const VideoPlayer = () => {
   };
 
   return (
-    <div className="md:min-h-[500px] min-h-[300px] bg-[#191919] py-10">
+    <div className="md:min-h-[500px] min-h-[300px] bg-[#191919] pt-10">
       <div className="container">
         
 
@@ -29,7 +29,7 @@ const VideoPlayer = () => {
 
 
 
-        <div className="w-full h-auto flex justify-center items-center md:py-20">
+        <div className="w-full h-auto flex justify-center items-center md:py-10">
           <div className="relative">
             <video
               ref={videoRef}
