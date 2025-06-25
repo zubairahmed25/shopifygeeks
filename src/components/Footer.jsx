@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col bg-black text-white">
+    <footer className="flex flex-col bg-[#191919] text-white">
       <div className="border-b border-solid border-[#5A5A5A]/40 w-full py-16">
         <p className="text-white lg:text-6xl md:text-5xl sm:text-4xl text-2xl font-semibold text-center">
           hello@shopifygeeks.io

@@ -55,7 +55,7 @@ export default function Navigation() {
         </div>
       </nav>
       <div
-        className={`fixed top-0 left-0 w-full h-screen bg-black transition-transform transform ${isOpen ? "translate-x-0" : "translate-x-full"
+        className={`fixed top-0 left-0 w-full h-screen bg-[#191919] transition-transform transform ${isOpen ? "translate-x-0" : "translate-x-full"
           } flex flex-col items-center justify-center text-white space-y-6`}
       >
         <div className="flex items-center justify-between absolute top-0 right-0 left-0 px-3 py-6">

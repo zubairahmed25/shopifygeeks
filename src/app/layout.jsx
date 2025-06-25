@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-black">
+      <body className="bg-[#191919]">
         <header className="absolute w-full top-0 left-0 right-0 py-6 z-50">
           <Navigation />
         </header>

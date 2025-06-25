@@ -18,7 +18,7 @@ export default function PreLoaderWrapper({ children }) {
     <div className="relative">
       {children}
       {showLoader && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#191919]">
           <PreLoader />
         </div>
       )}
