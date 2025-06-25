@@ -14,9 +14,22 @@ const VideoPlayer = () => {
   };
 
   return (
-    <div className="md:min-h-[500px] min-h-[300px] bg-black">
+    <div className="md:min-h-[500px] min-h-[300px] bg-[#191919] py-10">
       <div className="container">
-        <div className="w-full h-auto flex justify-center items-center md:py-20 py-10">
+        
+
+
+      <div className="flex flex-col md:flex-row justify-center items-center w-full px-6 md:px-12 gap-4 md:gap-0">
+              <h3 className="text-white md:text-4xl sm:text-2xl text-2xl text-center mb-4 font-semibold">
+                {`Discover Our Process`}
+              </h3>
+              </div>
+
+
+
+
+
+        <div className="w-full h-auto flex justify-center items-center md:py-20">
           <div className="relative">
             <video
               ref={videoRef}

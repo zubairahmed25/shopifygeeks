@@ -2,6 +2,7 @@
 import Spline from "@splinetool/react-spline";
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import BeforeAfterSlider from "./BeforeAfterSlider";
 
 export default function ContactUs() {
 
@@ -144,6 +145,9 @@ export default function ContactUs() {
           </div>
         </div>
       )}
+  
+
+      
     </>
   );
 }
