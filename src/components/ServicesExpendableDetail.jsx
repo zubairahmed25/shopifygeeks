@@ -105,7 +105,7 @@ export default function ServicesExpendableDetail() {
                 transition={{ duration: 0.6, ease: "easeInOut" }}
                 className="overflow-hidden"
               >
-                <div className="bg-[#191919] md:min-h-60 min-h-[100px] max-md:relative">
+                <div className="bg-[#000000] md:min-h-60 min-h-[100px] max-md:relative">
                   <div className="container flex md:flex-row flex-col gap-8 relative">
                     <div className="flex flex-col flex-1 gap-4 py-10 relative z-10">
                       <div className="bg-[#4462FF]/30 h-12 w-12 rounded-lg p-2">
