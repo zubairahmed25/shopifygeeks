@@ -87,7 +87,7 @@ export default function Navigation() {
         {/* Social Media Icons */}
         <div className="flex items-center gap-4">
           <Link
-            href="/"
+            href="https://www.linkedin.com/company/shopifygeeks"
             className="flex items-center justify-center rounded-full border border-solid border-[#5A5A5A]  h-12 w-12 p-2"
           >
             <LinkedInIcon />
@@ -99,7 +99,7 @@ export default function Navigation() {
             <InstagramIcon />
           </Link>
           <Link
-            href="/"
+            href="https://www.instagram.com/shopify_geeks"
             className="flex items-center justify-center rounded-full border border-solid border-[#5A5A5A]  h-12 w-12 p-2"
           >
             <DiscordIcon />
@@ -109,3 +109,6 @@ export default function Navigation() {
     </>
   );
 }
+
+
+

@@ -8,13 +8,13 @@ export default function FooterSocial() {
     <div className="flex flex-col gap-4 md:items-start items-center">
       <div className="flex items-center gap-4">
         <Link
-          href="/"
+          href="https://www.linkedin.com/company/shopifygeeks"
           className="flex items-center justify-center rounded-full border border-solid border-[#5A5A5A]  h-12 w-12 p-2"
         >
           <LinkedInIcon />
         </Link>
         <Link
-          href="/"
+          href="https://www.instagram.com/shopify_geeks"
           className="flex items-center justify-center rounded-full border border-solid border-[#5A5A5A]  h-12 w-12 p-2"
         >
           <InstagramIcon />
